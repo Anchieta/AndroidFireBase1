@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myEditTextTheme">
+        <item name="colorSwitchThumbNormal">#ff5a595b</item>
+        <item name="android:colorForeground">#42221f1f</item>
+        <item name="colorControlNormal">#ff5a595b</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        parent=ThemeOverlay.AppCompact.Dark.ActionBar"
+    </style>
+
+</resources>

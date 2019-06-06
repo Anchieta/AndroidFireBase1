@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro">
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCpf"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edtCpf"
+        app:layout_constraintStart_toStartOf="@+id/edtCpf"
+        app:layout_constraintTop_toBottomOf="@+id/edtCpf" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtTel"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenha"
+        app:layout_constraintStart_toStartOf="@+id/edtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+    <EditText
+        android:id="@+id/edtIdade"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edtTel"
+        app:layout_constraintStart_toStartOf="@+id/edtTel"
+        app:layout_constraintTop_toBottomOf="@+id/edtTel" />
+
+    <CheckBox
+        android:id="@+id/chkSexoFem"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Feminino"
+        app:layout_constraintEnd_toStartOf="@+id/chkSexoMasc"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdade" />
+
+    <CheckBox
+        android:id="@+id/chkSexoMasc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Masculino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdade" />
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sexo"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/chkSexoFem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtIdade"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdade" />
+
+    <CheckBox
+        android:id="@+id/chkMailing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Sim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSexoFem" />
+
+    <TextView
+        android:id="@+id/tvMailing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Receber email com novidades e promoções"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toStartOf="@+id/chkMailing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSexoFem" />
+
+    <CheckBox
+        android:id="@+id/chkTermos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="SIM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkMailing" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:text="Concordo com os termos de Uso e com Política de Privacidade"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvMailing"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <Button
+        android:id="@+id/btnGravar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_buttom"
+        android:text="Gravar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtIdade"
+        app:layout_constraintStart_toStartOf="@+id/edtIdade"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</android.support.constraint.ConstraintLayout>
