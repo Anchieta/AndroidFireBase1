@@ -26,7 +26,7 @@ public class TelaPrincipal extends AppCompatActivity {
 
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private Button btnLogout;
+    private Button btnLogout, btnMenuTop;
     private TextView txtNome,txtEmail, txtUid, txtTel;
     private ImageView ivFoto;
 
@@ -41,6 +41,7 @@ public class TelaPrincipal extends AppCompatActivity {
         txtTel = findViewById(R.id.txtTel);
         txtUid = findViewById(R.id.txtUid);
         btnLogout = findViewById(R.id.btnLogout);
+        btnMenuTop = findViewById(R.id.btnMenuTop);
         ivFoto = findViewById(R.id.ivFoto);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -89,6 +90,13 @@ public class TelaPrincipal extends AppCompatActivity {
                 alertDialog.show();
             } //onClick
         }); //btnLogout
+
+        btnMenuTop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TelaPrincipal.this, TelaPerfil.class));
+            }
+        }); //btnMenuTop
 
 
     } //onCreate

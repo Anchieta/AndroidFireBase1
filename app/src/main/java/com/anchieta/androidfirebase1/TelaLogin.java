@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +35,7 @@ public class TelaLogin extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         edtEmail = findViewById(R.id.edtEmail);
-        edtSenha = findViewById(R.id.edtSenha);
+        edtSenha = findViewById(R.id.edtSenhaAntiga);
         btnLogin = findViewById(R.id.btnLogin);
         tvEsqueceuSenha = findViewById(R.id.tvEsqueceuSenha);
 
@@ -55,7 +54,7 @@ public class TelaLogin extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                                             if (task.isSuccessful()) {
-                                                Toast.makeText(TelaLogin.this, "LOGOU!!!!!!!!", Toast.LENGTH_LONG ).show();
+                                                //Toast.makeText(TelaLogin.this, "LOGOU!!!!!!!!", Toast.LENGTH_LONG ).show();
                                                 startActivity(new Intent(TelaLogin.this, TelaPrincipal.class));
                                                 finish();
                                             } else {
@@ -81,8 +80,8 @@ public class TelaLogin extends AppCompatActivity {
 
                 } //if (aciveNetwork != null)
 
-                String  teste = "=> Email: " + edtEmail.getText().toString() + "\n\nSenha: " + edtSenha.getText().toString();
-                Toast.makeText(getBaseContext(), teste, Toast.LENGTH_LONG).show();
+                //String  teste = "=> Email: " + edtEmail.getText().toString() + "\n\nSenha: " + edtSenha.getText().toString();
+                //Toast.makeText(getBaseContext(), teste, Toast.LENGTH_LONG).show();
             } //onClick(View view)
         });  // btnLogin.setOnClickListener
 

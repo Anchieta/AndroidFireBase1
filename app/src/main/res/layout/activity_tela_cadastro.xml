@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtCpf" />
 
     <EditText
-        android:id="@+id/edtSenha"
+        android:id="@+id/edtSenhaAntiga"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -75,9 +75,9 @@
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="@+id/edtSenha"
-        app:layout_constraintStart_toStartOf="@+id/edtSenha"
-        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+        app:layout_constraintEnd_toEndOf="@+id/edtSenhaAntiga"
+        app:layout_constraintStart_toStartOf="@+id/edtSenhaAntiga"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenhaAntiga" />
 
     <EditText
         android:id="@+id/edtIdade"

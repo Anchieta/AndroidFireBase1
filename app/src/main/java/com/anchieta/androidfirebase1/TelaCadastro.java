@@ -18,7 +18,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,7 +42,7 @@ public class TelaCadastro extends AppCompatActivity {
 
         edtNome = findViewById(R.id.edtNome);
         edtEmail  = findViewById(R.id.edtEmail);
-        edtSenha  = findViewById(R.id.edtSenha);
+        edtSenha  = findViewById(R.id.edtSenhaAntiga);
         edtTel  = findViewById(R.id.edtTel);
         edtIdade  = findViewById(R.id.edtIdade);
         edtCpf = findViewById(R.id.edtCpf);
